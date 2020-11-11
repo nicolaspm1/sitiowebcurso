@@ -1,0 +1,1177 @@
+body{
+    background-color: azure;
+}
+
+
+header, section, footer{
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+header{
+    height:200px;
+    position: relative;
+    background-image: url(../img/fondoHeader.jpg);
+}
+
+/*-------------------- Header -------------------------*/
+/* ------------------- divs header  -------------------*/
+
+/*div que contiene el logo*/
+#logo{
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left:40px;
+    background-image: url(../img/logo.png);
+    position: absolute;
+    top:80px;
+}
+
+/*-----div nombre agencia*/
+#nombre_agencia{
+    height: 60px;
+    width: 140px;
+    position: absolute;
+    top: 120px;
+    left: 160px;
+    background-color: rgba(20, 10, 15, 0.7); 
+}
+
+#nombre_agencia > p{
+    font-family:'Courier New', Courier, monospace;
+    color: lemonchiffon;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    bottom: 10px;
+    text-align: center;
+    box-shadow:  0px 0px 8px #cccc00;
+}
+
+/*Div caja menu*/
+#menu{
+    height: 50px;
+    width: 440px;
+    position: absolute;
+    top: 150px;
+    left: 520px;
+}
+
+/*menu de navegacion */
+
+nav > label{
+    display: none;
+}
+
+
+nav > input {
+    display: none;
+}
+
+nav >ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline;
+}
+
+nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    bottom: 10px;
+    margin-right: 18px;
+    padding: 0px 3px;
+    width: 65px;
+    height: 40px;
+    background-color: rgba(0, 35, 0, 1);
+    color: gold;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+    border: 2px solid crimson;
+    border-radius: 7px;
+}
+
+nav ul li a:hover{
+    background-color:yellow;
+    color: rebeccapurple;
+    box-shadow: 7px 7px 7px crimson;
+}
+/*--------------------------------------------------------*/
+/*---------Section datos del visitante-------------------*/
+.visitante{
+    border: 2px dashed crimson;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.visitante > p{
+    font-family: 'Sansita Swashed', cursive;
+}
+
+.visitante > a{
+    display: inline-block;
+    margin-bottom: 10px;
+    color: rgba(0, 135, 0, 1);
+}
+
+.visitante > #resultado_test{
+    color: #b3b3ff;
+    text-shadow: 0px 0px 2px black, 0px 0px 2px black;
+    line-height: 35px;
+}
+
+ /*----------------- Section inicio ---------------------*/
+#inicio{
+    height: 220px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*---- divs section inicio*/
+#buscar_destino{
+    display: inline-block;
+    height: 180px;
+    width: 450px;
+    padding: 20px 20px;
+    position: relative;
+    left: 230px;
+}
+
+
+#buscar_destino p, h2{
+    margin:0px 0px 10px 0px;
+    padding: 0px;
+}
+
+#buscar_destino> h2{
+    text-align: center;
+    color: crimson;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* formularios select*/
+select{
+    margin: 10px 20px 10px 0px;
+}
+
+/*-------------------- Section Paquetes ----------------*/
+#paquetes{
+    height: 640px;
+    background-color: #d5d7e3;
+}
+
+/*divs section paquetes*/
+/*Mismo estilo para cada h2 de cada setion*/
+#paquetes h2, #elegirnos h2, #contacto h2{
+    text-align: center;
+    margin: 0px;
+    padding-top: 30px;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: underline;
+    color: crimson;
+}
+
+#destino_uno, #destino_dos, #destino_tres, #destino_cuatro{
+    background-color: #0497d6;
+    height: 200px;
+    width: 260px;
+    border: 3px solid #202324;
+}
+
+
+#destino_uno{
+    float: left;
+    margin-top: 60px;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+
+
+#destino_dos{
+    float: right;
+    margin-top: 60px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+}
+
+/*Utilizo el div vacio para limpiar las cajas flotantes
+y posicionar las otras flotantes por debajo*/
+#vacio{
+    clear: both;
+}
+
+#vacio > span{
+    position: relative;
+    left: 340px;
+    font-weight: bolder;
+}
+
+#destino_tres{
+    float: left;
+    margin-top: 17px;
+    margin-left: 200px;
+}
+
+#destino_cuatro{
+    float: right;
+    margin-top: 17px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+}
+.link_a_paquetes{
+    clear: both;
+    margin-left: 400px;
+    width: 120px;
+}
+
+.link_a_paquetes > a:link{
+    color: darkslateblue;
+}
+
+.link_a_paquetes > a:visited{
+    color:#008000;
+}
+
+/*--------------------- Section elegirnos  --------------------------*/
+#elegirnos{
+    height: 550px;
+    background-color: #b3b3ff;
+}
+
+#elegirnos p, h4{
+    margin: 5px 20px 10px;
+    font-size: 20px;
+}
+
+
+/* divs section elegirnos*/
+
+#razon_uno, #razon_dos, #razon_tres{
+    height: 365px;
+    width: 230px;
+    margin-top: 50px;
+   
+    
+}
+
+#razon_uno{
+   float: left;
+   margin-left: 50px;
+}
+
+
+
+/*------------------------------------------*/
+
+#razon_dos{
+    float: left;
+    margin-left: 100px;
+}
+
+#razon_dos img{
+    margin-left: 10px;
+}
+
+/*------------------------------------------*/
+
+#razon_tres{
+    float: left;
+    margin-left: 100px;
+}
+
+#razon_tres img{
+    margin: 30px 20px 0px;
+}
+
+#razon_tres h4{
+    margin-top: 30px;
+}
+/*--------------- Section Contacto ------------------------*/
+#contacto{
+    height: 450px;
+    background-color: #d5d7e3;
+}
+
+/*div contacto*/
+
+#formulario{
+    height: 380px;
+    width: 750px;
+    position: relative;
+    top: 35px;
+    margin-left: 100px;
+}
+
+#formulario form{
+    position: relative;
+    left: 200px;
+}
+
+/*campos(labels e inputs)*/
+.campo1 , .campo2 , .campo3{
+    margin-bottom: 20px;
+}
+
+/*inputs*/
+.campo1 input{
+    margin-left: 30px;
+    width: 230px;
+}
+
+.campo2 input{
+    margin-left: 52px;
+    width: 230px;
+}
+
+.campo3 input{
+    margin-left: 35px;
+    width: 230px;
+}
+
+.campo4 textarea{
+    margin-left: 30px;
+}
+/*boton de envio*/
+#envio{
+    margin-top: 30px;
+    margin-left: 150px;
+}
+/*-----------------  Footer ------------------------------*/
+
+footer{
+    height:300px;
+    background-color: #262829;
+    margin-top: 10px;
+}
+
+footer h3{
+    padding: 0px;
+    margin: 0px;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    display: inline-block;
+    width: 220px;
+}
+
+footer p{
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+/*divs footer*/
+#sucursales{
+    height: 280px;
+    width: 510px;
+    position: relative;
+    top: 5px;
+    left: 80px;
+    display: inline-block;
+    padding-left: 20px;
+    padding: 5px 0px;
+}
+
+
+h3{
+    color: #ff4000;
+    font-weight: bold; 
+}
+
+
+/* lista con mail y whatsapp*/
+.datos{
+    float: left;
+}
+
+.datos li{
+    margin: 10px 0px 40px 10px;
+}
+
+#email{
+    list-style-image: url(../img/mail.png);
+}
+
+#whatsapp{
+    list-style-image: url(../img/whatsapp.png);
+}
+
+/*lista con la ubicacion*/
+
+iframe{
+    margin-top: 10px;
+    height: 200px;
+    width: 300px;
+}
+.ubicacion{
+    float: right;
+    margin-right: 40px;
+}
+
+.ubicacion h3{
+    margin-top: 10px;
+}
+
+
+
+/*--------------------------------------------------------*/
+#redes{
+    width: 180px;
+    float: right;
+    margin-right: 80px;
+    margin-top: 20px;
+}
+
+
+
+#redes ul li{
+    display: inline;
+}
+
+#redes ul li h3{
+    margin-bottom: 35px;
+}
+
+#redes ul li a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+#redes ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color:yellow ;
+    text-decoration-style: dotted;
+}
+
+/*------------------------------------------------------------------*/
+/* -------------RESPONSIVE---------------------------------- */
+
+@media all and (min-width: 600px) and (max-width: 1023px){
+
+    header, section, footer{
+        width: 580px;
+        font-size: 100%;
+        
+    }
+    
+    header{
+        background-size: cover;
+    }
+    
+    /*-------------------- Header -------------------------*/
+    /* ------------------- divs header  -------------------*/
+    
+    /*div que contiene el logo*/
+    #logo{
+        top: 10px;
+        margin: 0px 20px;
+        
+    }
+    
+    /*-----div nombre agencia*/
+    #nombre_agencia{
+        top: 30px;
+        left: 260px;
+       
+    }
+    
+    
+    
+    /*Div caja menu*/
+    #menu{
+        left: 120px;
+        top: 140px;
+    }
+    
+    nav >ul {
+        margin-top: 15px;
+    }
+    /*--------------------------------------------------------*/
+    /*-------------Section datos del visitante---------------*/
+    .visitante{
+        width: 350px;
+        position: relative;
+        left: 100px;
+        text-align: left;
+    }
+
+    .visitante h3{
+        text-align: center;
+    }
+
+    .visitante > p{
+        margin-left: 10px;
+    }
+    
+    .visitante > a{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .visitante > #resultado_test{
+        margin-left: 18px;
+    }
+
+     /*----------------- Section inicio ---------------------*/
+   
+
+     #inicio{
+         height: 300px;
+     }
+
+
+    /*---- divs section inicio*/
+    
+    #buscar_destino{
+        height: 230px;
+        left: 50px;
+    }
+
+    #buscar_destino p{
+        font-size: 20px;
+    }
+    
+    #buscar_destino input{
+        width: 60px;
+        font-size: 15px;
+    }
+    /*-------------------- Section Paquetes ----------------*/
+    #paquetes{
+        height: 1250px;
+        
+       
+    }
+    
+    /*divs section paquetes*/  
+    
+    #destino_uno{
+        margin-left: 150px;
+       
+    }
+    
+    
+    #destino_dos{
+        clear: left;
+        position: relative;
+        left: 36px;
+        
+    }
+    
+    
+    #vacio > span{
+        position: relative;
+        left: 140px;
+        bottom: 550px;
+        
+        
+    }
+    
+    #destino_tres{
+        margin-top: 50px;
+        margin-left: 150px;
+        
+    }
+    
+    #destino_cuatro{
+        clear: left;
+        position: relative;
+        left: 36px;
+        margin-top: 80px;
+        
+    }
+
+    .link_a_paquetes{
+        margin-left: 220px;
+    }
+    
+    /*--------------------- Section elegirnos  --------------------------*/
+    #elegirnos{
+        height:950px;
+        
+    }
+    
+    /* divs section elegirnos---razon uno*/
+    
+    #razon_uno, #razon_dos, #razon_tres{
+        width: 200px;
+          
+    }
+    
+    #razon_uno{
+        height: 400px;
+        margin-left: 40px;
+        
+    }
+    
+    
+    
+    /*----------------------razon_dos--------------------*/
+    
+    #razon_dos{
+        height: 400px;
+        width: 220px;
+        margin-top: 40px;
+        
+    }
+    
+    #razon_dos img{
+        display: inline-block;
+        margin-bottom: 10px;
+        
+    }
+
+    #razon_dos p{
+        width: 150px;
+        
+    }
+    
+    /*-------------------razon_tres-----------------------*/
+    
+    #razon_tres{
+        width: 230px;
+        clear:left;
+        margin-left: 180px;
+        
+    }
+
+    #razon_tres p{
+        width:200px;
+        
+    }
+    
+    /*--------------- Section Contacto ------------------------*/
+ 
+    #formulario{
+        width: 570px;
+        height: 375px;
+        margin: 0px;
+        top: 10px;
+        
+    }
+    
+    #formulario form{
+        left: 0px;
+        margin-top: 20px;
+    }
+
+    #formulario form label{
+        font-size: 20px;
+    }
+    
+    /*inputs*/
+
+    .campo2 input{
+        margin-left: 57px;
+    }
+
+    .campo3 input{
+        margin-left: 38px;
+    }
+
+    .campo1, .campo2, .campo3, .campo4{
+        margin-left: 100px;
+    }
+   
+    #envio{
+        margin-left: 270px;
+        width: 55px;
+        height: 30px;
+        font-size: 15px;
+    }
+    /*-----------------  Footer ------------------------------*/
+    
+    footer{
+        height: 330px;
+    }
+
+    
+    /*divs footer*/
+    #sucursales{
+        height: 320px;
+        width: 575px;
+        position: relative;
+        top: 0px;
+        left: 0px;
+        
+    }
+    
+    
+    
+    /* lista con mail y whatsapp*/
+    .datos{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .datos li{
+        margin:0px 0px 0px 40px;
+    }
+    
+    /*lista con la ubicacion*/
+    
+    iframe{
+        margin-top: 10px;
+        height: 200px;
+        width: 300px;
+    }
+    .ubicacion{
+        float: right;
+        margin-right: 10px;
+        width: 300px;
+        height: 300px;
+    }
+    
+    
+    /*--------------------------------------------------------*/
+    #redes{
+        width: 40px;
+        position: fixed;
+        top: 250px;
+        left: 0px;
+       
+    }
+    
+    
+    
+    #redes ul li{
+        display: block;
+        width: 40px;
+    }
+    
+    #redes ul li h3{
+        display: none;
+    }
+      
+    #redes ul li a:hover{
+        text-decoration: none;
+    }
+
+}/*fin media 600px - 1023px*/
+
+/*-----------------------------------------------------------*/
+/*--------------Media MOBILE---------------------------------*/
+@media all and (max-width: 599px){
+
+    header, section, footer{
+        width: 90%;
+        height:auto;
+    }
+    
+    header{
+        height:auto;
+        background-image: none;
+        position: static;
+    }
+    
+
+    /*-------------------- Header -------------------------*/
+    /* ------------------- divs header  -------------------*/
+    
+    /*div que contiene el logo*/
+    #logo{
+        display: none;
+    }
+    
+    /*-----div nombre agencia*/
+    #nombre_agencia{
+        display: none;
+    }
+    
+    /*Div caja menu*/
+    #menu{
+        height: auto;
+        width: 15%;
+        position: absolute;
+        top: 50px;
+        left: 6px;
+    }
+    
+    /*menu de navegacion */
+    
+    nav ul li{
+        display: block;
+        margin-bottom: 0px;
+    }
+
+    nav > ul > li > a {
+        padding-right: 40px;
+    }
+    
+    /*---------ICONO BARRA y MENU RESPONSIVE*/
+    header > nav > label {
+        display: inline;
+        background-color: rgba(0, 35, 0, 1);
+        color: crimson;
+        border: 1px solid crimson;
+        position: fixed;
+        left: 8px;
+        margin: 0px;
+        top: 30px;
+        font-size: 25px;
+    }
+
+    nav > ul{
+        display: none;
+      }
+      
+     nav > input:checked  ~ ul{
+        display:block;
+        position: fixed;
+        top: 73px;
+        left: 8px;
+        width: 100%;
+        z-index: 10;
+      }
+      
+      nav ul li a {
+          border-radius: 0px;
+         
+      }
+
+    /*-------------------Section donde van datos del visitante-------------------*/
+    .visitante{
+        width: 60%;
+        position: relative;
+        left: 75px;
+        text-align: left;
+        font-size: 12px;
+        padding: 0px 5px;
+    }
+
+    .visitante > h3{
+        text-align: center;
+    }
+
+    .visitante > p {
+        margin-left: 10px;
+    }
+
+    .visitante > a{
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+     /*----------------- Section inicio ----------------------------------------*/
+    #inicio{
+        height: auto;
+        position: relative;
+        left: -20px;
+    }
+    
+    /*---- divs section inicio*/
+    
+    #buscar_destino{
+        height: auto;
+        width: 80%;
+        left: 30px;
+        margin-bottom: 10px;
+    }
+    
+    #buscar_destino p, h2{
+        width: 70%;
+        margin-left: 50px;
+    }
+        
+    /* formularios select*/
+    #buscar_destino form{
+        width: 90%;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    #buscar_destino select{
+        display: block;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+
+    #buscar_destino form input{
+        display: block;
+        position: relative;
+        top: 0px;
+        left: 100px;
+        width: 20%;
+        margin-top: 10px;
+    }
+    
+    /*-------------------- Section Paquetes ----------------*/
+    #paquetes{
+        height: auto;
+        padding-bottom: 20px;
+    }
+    
+    #paquetes h2{
+        margin-left: 50px;
+        padding-top: 0px;
+        
+    }
+    
+    #destino_uno, #destino_dos, #destino_tres, #destino_cuatro{
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+    
+    #destino_uno{
+        float: none;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #destino_dos{
+        float: none;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /*Utilizo el div vacio para limpiar las cajas flotantes
+    y posicionar las otras flotantes por debajo*/
+    #vacio{
+        position: relative;
+        bottom: 465px;
+        margin-top: 15px;
+    }
+    
+    #vacio > span{
+        position: relative;
+        left: 60px;
+        bottom: 0px;    
+    }
+    
+    #destino_tres{
+        float: none;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+    }
+    
+    #destino_cuatro{
+        float: none;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+
+    .link_a_paquetes{
+        width: 30%;
+        margin-left: 140px;
+    }
+    
+    /*--------------------- Section elegirnos  --------------------------*/
+    #elegirnos{
+        margin-top: 20px;
+        height: auto;
+        padding-bottom: 10px;
+      
+    }
+    
+    #elegirnos p, h4, h2{
+        font-size: 100%;
+    }
+
+    #elegirnos h2{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /* divs section elegirnos*/
+    
+    #razon_uno, #razon_dos, #razon_tres{
+        height: auto;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #razon_uno{
+       float: none;
+       margin-left: 0px;
+    }
+    
+    /*------------------------------------------*/
+    
+    #razon_dos{
+        float: none;
+        margin-left: 0px;
+    }
+    
+    #razon_dos img{
+        margin-left: 10px;
+    }
+    
+    /*------------------------------------------*/
+    
+    #razon_tres{
+        float: none;
+        margin-left: 0px;
+    }
+    /*--------------img y encabezados --------------*/
+    #razon_uno img, #razon_dos img{
+        margin: 0px;
+        position: relative;
+        left: 100px;
+    }
+
+    #razon_tres img{
+        margin: 0px;
+        position: relative;
+        left: 130px;
+    }
+    
+    #razon_tres h4{
+        margin-top: 0px;
+    }
+
+    #razon_uno h4, #razon_dos h4, #razon_tres h4{
+        position: relative;
+        left: 120px;
+        width: 30%;
+    }
+    /*--------------- Section Contacto ------------------------*/
+    #contacto{
+        height: auto;
+        margin-top: 20px;
+        padding-bottom: 15px;
+    }
+
+    #contacto h2{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+    
+    /*div contacto*/
+    
+    #formulario{
+        height: auto;
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 0px;
+        position: relative;
+        top: 8px;
+    }
+    
+    #formulario form{
+        left: 0px;
+    }
+    
+    /*campos(labels e inputs)*/
+    .campo1 , .campo2 , .campo3, .campo4{
+        margin-bottom: 20px;
+        margin-left: 30px;
+        width: 80%;
+    }
+    
+    /*boton de envio*/
+    #envio{
+        margin-top: 0px;
+        margin-left: 170px;
+    }
+    /*-----------------  Footer ------------------------------*/
+    
+    footer{
+        height:auto;
+    }
+
+    
+    footer ul{
+        width: 50%;
+    }
+    
+    
+    
+    /*divs footer*/
+    #sucursales{
+        height: auto;
+        width: 40%;
+        position: relative;
+        left: 10px;
+        top: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    
+    /* lista con mail y whatsapp*/
+    .datos{
+        float: none;
+        width: 100%;
+        position: relative;
+        bottom: 45px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .datos li{
+        margin: 10px 0px 50px 10px;
+    }
+    
+    #email{
+        list-style-image: url(../img/mail.png);
+    }
+    
+    #whatsapp{
+        list-style-image: url(../img/whatsapp.png);
+    }
+    
+    /*lista con la ubicacion*/
+    
+    iframe{
+        display: none;
+    }
+
+
+    .ubicacion{   
+        display: none;
+    }
+    
+    /*--------------------------------------------------------*/
+    #redes{
+        width: 20%;
+        float: none;
+        display: inline-block;
+        margin-right: 0px;
+        margin-top: 0px;
+        margin-left: 100px;
+    }
+    
+    #redes ul{
+        width: 100%;
+    }
+    
+    #redes ul li{
+        display: inline-block;
+        margin-top: 10px;
+        width: 100%;
+    }
+    
+    #redes ul li h3{
+        margin-bottom: 35px;
+    }
+    
+    #redes ul li a{
+        text-decoration: none;
+        margin-right: 20px;
+    }
+    
+    #redes ul li a:hover{
+        text-decoration: none;
+    }
+
+}/*-----media max 599px--------------------------*/

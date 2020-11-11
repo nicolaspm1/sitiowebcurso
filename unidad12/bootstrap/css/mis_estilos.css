@@ -1,0 +1,68 @@
+
+.crimson{
+    color: crimson;
+}
+
+.noborder{
+    border: 0px;
+}
+
+.scrollarrow{
+    background-color: darkblue;
+}
+
+
+/*------------------------------------------HEADER-------------------------------------------*/
+
+#head1, #head2{
+    background-color:  #b3b3ff;
+}
+
+.bgcolornav{
+    background-color: #33334d;
+}
+
+#head2{
+    background-image: url(../img/avion.jpg);
+    background-size: cover;
+}
+/*------------------------------------------SECTION -------------------------------------------*/
+
+#parte1, #parte2, #parte3{
+    background-color: azure;
+}
+
+.inputstyle{
+    background-color: #9999ff;
+}
+
+.inputstyle::placeholder{
+    color: #fff;
+}
+/*-------------------------------------------FOOTER---------------------------------------------------*/
+#pie{
+    height: 150px;
+}
+
+
+#pie1, #pie2, #pie3{
+    background-color:  #47476b;  
+}
+
+.lista{
+    color: #fff;
+    list-style-type: none;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+/*--------------------MEDIA USADO PARA TENER UNA CAJA SOLA EN EL FOOTER DESDE XS A SM---------------------*/
+@media all and (max-width: 575px){
+    #pie2, #pie3{
+        display: none;
+    }
+
+    #lista{
+        position: relative;
+        left: 170px;
+    }
+}

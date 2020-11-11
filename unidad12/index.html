@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Maquetación Web</title>
+        <!--Google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        
+        <script type="text/javascript">
+        
+            var nombre = prompt("Escriba su nombre")    
+            var pais = prompt("De donde nos visita?")
+            var  motivo = prompt("Por qué motivos visita nuestro sitio web?")
+            var  paisAVisitar = prompt("Qué destino le gustaría conocer?")
+            var  conQuien = prompt("Con quién se iría de viaje a ese destino?")
+        
+        </script>
+    </head>
+    <body>
+      
+        <header>
+            <div id="logo"></div>
+
+            <div id="nombre_agencia">
+                <p>Around World</p>
+            </div>
+
+           
+            <nav id="menu">
+                 <!--Agregué un icono para usar en el responsive mobile-->
+                <input type="checkbox" id="despliegue"/>
+                <label for="despliegue"> ☰ </label>
+
+                <ul>
+                    <li>
+                        <a href="#inicio">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#paquetes">Paquetes</a>
+                    </li>
+                    <li>
+                        <a href="#elegirnos">Insignia</a>
+                    </li>
+                    <li>
+                        <a href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+        <section>
+            <div class="visitante">
+                <h3>Bienvenido</h3>
+                <p>
+                    Nombre del visitante:
+                    <script type="text/javascript">
+                        document.write(nombre)
+                    </script> 
+                </p>
+                <p>
+                    País:
+                    <script type="text/javascript">
+                        document.write(pais)
+                    </script>  
+                </p>
+                <p>
+                    Motivo de la visita:
+                    <script type="text/javascript">
+                        document.write(motivo)
+                    </script>  
+                </p>
+                <p>
+                    Destino que le gustaría visitar: 
+                    <script type="text/javascript">
+                        document.write(paisAVisitar)
+                    </script> 
+                </p>
+                <p>
+                    Con quién viajaría: 
+                    <script type="text/javascript">
+                        document.write(conQuien)
+                    </script> 
+                </p>
+
+                <a href="#"  onclick="test()">
+                    Demostrá cuánto sabes en el TEST DEL VIAJERO
+                </a>
+
+                <p id="resultado_test"></p> 
+            
+            </div>
+        </section>
+        <!-- Aca iria un formulario para buscar destino por pais, continente, etc-->
+        <section id="inicio">
+            
+            <div id="buscar_destino">
+                <h2>Around World Agency</h2>
+                <p>
+                    Somos una agencia de turismo relativamente nueva y comprometida
+                    en brindarte todo lo que necesites para hacer de tu viaje una
+                    experiencia única e inolvidable. Ofrecemos variedades de destinos 
+                    alrededor del mundo como también paquetes ya armados o personalizados
+                    como ustedes quieran, eligiendo a continuación, continente y país.
+                </p>
+                <form method="POST" action="#">
+
+                    <label for="continentes">Continente</label>
+                    <select id="continentes">
+                        <option selected>Ámerica</option>
+                        <option value="1">Europa</option>
+                        <option value="2">Asia</option>
+                        <option value="3">Oceanía</option>
+                        <option value="4">África</option>
+                    </select>
+
+                    <label for="países">Países</label>
+                    <select id="paises">
+                        <option>-----</option>
+                        <option>-----</option>
+                        <option>-----</option>
+                        <option>-----</option>
+                    </select>
+
+                    <input type="button" value="Buscar"/>
+
+                </form>
+            </div>
+
+        </section>
+        
+        <!--Aca irian paquetes turisticos ya armados, mi idea es poner un carrousel-->
+        <section id="paquetes">
+
+            <h2>Paquetes Turísticos</h2>
+
+            <div id="destino_uno" >
+                <a href="#" target="_blank">
+                    <img src="img/Europa.png" alt="Paquete Europa" />
+                </a>
+            </div>
+
+            <div id="destino_dos">
+                <a href="#" target="_blank">
+                   <img src="img/cusco.jpeg" alt="Machu picchu" /> 
+                </a>
+            </div>
+
+            <div id="vacio">
+                <span>*Los paquetes no incluyen el pasaje aéreo</span>
+            </div>
+            <div id="destino_tres">
+                <a href="#" target="_blank">
+                    <img src="img/turquia.jpg" alt="turquia" />
+                </a>
+            </div>
+
+            <div id="destino_cuatro">
+                <a href="#" target="_blank">
+                    <img src="img/miami.jpg" alt="miami" />
+                </a>
+            </div>
+
+            <!--Enlace a la plantilla con bootstrap-->
+            <p class="link_a_paquetes">
+                <a href="bootstrap/paquetes.html" target="_blank">Más información</a>
+            </p>
+
+        </section>
+
+        <!--Aca irian las razones por las cuales deben elegir mi agencia de turismo-->
+        <section id="elegirnos">
+            <h2>Por qué elegirnos?</h2>
+            <div id="razon_uno">
+                <img src="img/compromiso.png" alt="apreton de manos" />
+                <h4>Compromiso</h4>
+                <p>
+                    Estaremos pendiente de cualquier inquietud que tengas. No solo antes del viaje, sino durante y
+                    post viaje.
+                </p>
+            </div>
+
+            <div id="razon_dos">
+                <img src="img/tripadvisor.png" alt="logo tripadvisor" />
+                <h4>Nos recomiendan</h4>
+                <p>
+                   En el año 2019 fuimos reconocidos por Trip Advisor, por haber recibido muchas opiniones positivas.
+                </p>
+            </div>
+
+            <div id="razon_tres">
+                <img src="img/descuentos.png" alt="icono descuento" />
+                <h4>Descuentos</h4>
+                <p>
+                    Tenemos convenios con muchas empresas reconocidas.
+                    Es por eso que podemos ofrecerte descuentos con todo tipo de tarjetas. 
+                </p>
+            </div>
+
+        </section>
+
+        <!--formulario de contacto-->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div id="formulario">
+                <form method="POST" action="#">
+                    <div class="campo1">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido"/>
+
+                    </div>
+                    <div class="campo2">
+                        <label for="mail">Mail</label>
+                        <input type="email" id="mail" name="email" placeholder="ejemplo@hotmail.com"/>
+                    </div>
+                    <div class="campo3">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" name="asunto" placeholder="Motivo del mensaje"/>
+                    </div>
+                    <div class="campo4">
+                        <label for="consulta">Mensaje</label>
+                        <textarea name="consulta" id="consulta" cols="30" rows="10" placeholder="Dejanos tu comentario"></textarea>
+                    </div>
+
+                    <input type="submit" id="envio" />
+                </form>
+            </div>
+
+        </section>
+
+        <footer>
+
+            <div id="sucursales">
+                <ul class="datos">
+                    <li><h3>Contactanos</h3></li>
+                    <li id="email"><p>info@around.com</p></li>
+                    <li id="whatsapp"><p>+54 11-5555-4454</p></li>
+                </ul>
+ 
+                <ul class="ubicacion">
+                    <li>
+                        <h3>Nuestra ubicación</h3>
+                    </li>
+                    <li>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.066850016401!2d-58.3815704!3d-34.6037389!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses!2sar!4v1600807758872!5m2!1ses!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </li>
+                    <li>
+                        <address>
+                             <p>Av.9 de Julio s/n, CABA</p> </address>
+                    </li>
+                </ul>
+                
+            </div>
+
+            <div id="redes">
+                <ul>
+                    <li>
+                        <h3>Redes</h3>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="img/facebook.png" alt="logo facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="img/instagram.png" alt="logo instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <img src="img/twitter.png" alt="logo twitter">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </footer>
+
+        <script type="text/javascript" src="js/estilos.js"></script>
+    </body>
+</html>
